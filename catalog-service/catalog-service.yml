@@ -1,0 +1,20 @@
+server:
+  port: 9001
+  tomcat:
+    connection-timeout: 2s
+    keel-alive-timeout: 15s
+    threads:
+      max: 20
+      min-spare: 2
+polar:
+  greeting: Welcome to the local book catalog which was shared from config service!
+  datasource:
+
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5432/polardb_catalog
+    hikari:
+      connection-timeout: 2000
+      maximum-pool-size: 5
